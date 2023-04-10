@@ -1,0 +1,48 @@
+@startuml
+package br.edu.ifms.matricula {
+  package config {
+    class OpenApiConfig
+  }
+  package controller {
+    package dto {
+      class CursoRequest
+      class CursoResponse
+      class EstudanteRequest
+      class EstudanteResponse
+    }
+    package mapper {
+      class CursoMapper
+      class EstudanteMapper
+    }
+    class CursoController
+    class EstudanteController
+  }
+  package model {
+    package dto {
+      class CursoDto
+      class EstudanteDto
+    }
+    package entities {
+      class Curso
+      class Estudante
+    }
+    package mapper {
+      class CursoMapper
+      class EstudanteMapper
+    }
+    package repositories {
+      interface CursoRepository
+      interface EstudanteRepository
+    }
+    package services {
+      class CursoService
+      class EstudanteService
+    }
+  }
+  package Utils {
+    class MD5
+    class ValidaCPF
+  }
+  class MatriculaApplication
+}
+@enduml
