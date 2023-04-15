@@ -6,14 +6,16 @@ import jakarta.persistence.Entity;
 @Entity
 public class Professor extends Pessoa {
 
-    @Column
+    @Column(name = "col_especialidade_tb_Professor")
     private String especialidade;
 
-    @Column(unique = true)
+    @Column(unique = true, name = "col_login_tb_Professor")
     private String login;
 
-    @Column(unique = true)
+    @Column(unique = true, name = "col_senha_tb_Professor")
     private String senha;
 
-    // construtores, getters e setters
+
+
+
 }

@@ -1,6 +1,5 @@
 package edu.escola.sistemaedu.model.entity;
 
-import edu.escola.sistemaedu.model.dto.DadoAcademico;
 import jakarta.persistence.*;
 import lombok.Data;
 

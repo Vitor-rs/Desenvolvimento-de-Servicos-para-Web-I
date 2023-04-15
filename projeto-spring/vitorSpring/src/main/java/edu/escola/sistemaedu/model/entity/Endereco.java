@@ -5,32 +5,32 @@ import jakarta.persistence.*;
 import java.util.UUID;
 
 @Entity
-@Table(name = "tb_endereco")
+@Table(name = "tb_Endereco")
 public class Endereco {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private UUID id;
 
-    @Column
+    @Column(name = "col_logradouro_tb_Endereco")
     private String logradouro;
 
-    @Column
+    @Column(name = "col_complemento_tb_Endereco")
     private String complemento;
 
-    @Column
+    @Column(name = "col_numero_tb_Endereco")
     private String numero;
 
-    @Column
+    @Column(name = "col_bairro_tb_Endereco")
     private String bairro;
 
-    @Column
+    @Column(name = "col_cidade_tb_Endereco")
     private String cidade;
 
-    @Column
+    @Column(name = "col_estado_tb_Endereco")
     private String estado;
 
-    @Column
+    @Column(name = "col_cep_tb_Endereco")
     private String cep;
 
     public UUID getId() {

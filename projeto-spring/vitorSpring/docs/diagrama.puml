@@ -1,7 +1,7 @@
 @startuml
 
 abstract class Pessoa {
-    -pessoaID: int
+    -pessoaID: Long
     -nomeCompleto: string
     -CPF: string
     -RG: string
