@@ -1,4 +1,4 @@
-package edu.escola.sistemaedu.model.entity;
+package edu.escola.sistemaedu.model.DadoProfissional;
 
 import jakarta.persistence.*;
 
@@ -6,12 +6,12 @@ import java.util.UUID;
 
 @Entity
 @Table(name = "tb_dadoProfissional")
-public class DadoProfissional {
+public class DadoProfissionalEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "col_dadoProfissionalID_tb_dadoProfissional")
-    private UUID dadoProfissionalID;
+    private Long dadoProfissionalID;
 
     @Column(name = "col_profissaoFuncaoCargo_tb_dadoProfissional")
     private String profissaoFuncaoCargo;
@@ -23,11 +23,11 @@ public class DadoProfissional {
     private String outros;
 
 
-    public UUID getDadoProfissionalID() {
+    public Long getDadoProfissionalID() {
         return dadoProfissionalID;
     }
 
-    public void setDadoProfissionalID(UUID dadoProfissionalID) {
+    public void setDadoProfissionalID(Long dadoProfissionalID) {
         this.dadoProfissionalID = dadoProfissionalID;
     }
 

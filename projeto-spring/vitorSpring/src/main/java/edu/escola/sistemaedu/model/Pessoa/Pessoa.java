@@ -1,5 +1,8 @@
-package edu.escola.sistemaedu.model.entity;
+package edu.escola.sistemaedu.model.Pessoa;
 
+import edu.escola.sistemaedu.model.DadoAcademico.DadoAcademicoEntity;
+import edu.escola.sistemaedu.model.DadoProfissional.DadoProfissionalEntity;
+import edu.escola.sistemaedu.model.Endereco.EnderecoEntity;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -13,7 +16,7 @@ public abstract class Pessoa {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID pessoaID;
+    private Long pessoaID;
 
     @Column
     private String nomeCompleto;
@@ -40,7 +43,7 @@ public abstract class Pessoa {
     private String telefoneFixo;
 
     @ManyToOne(cascade = CascadeType.ALL)
-    private Endereco endereco;
+    private EnderecoEntity enderecoEntity;
 
     @Column
     private String cidadeNatal;
@@ -52,17 +55,17 @@ public abstract class Pessoa {
     private boolean estrangeiro;
 
     @OneToOne(cascade = CascadeType.ALL)
-    private DadoAcademico dadosAcademicos;
+    private DadoAcademicoEntity dadosAcademicos;
 
     @OneToOne(cascade = CascadeType.ALL)
-    private DadoProfissional dadosProfissionais;
+    private DadoProfissionalEntity dadosProfissionais;
 
 
-    public UUID getPessoaID() {
+    public Long getPessoaID() {
         return pessoaID;
     }
 
-    public void setPessoaID(UUID pessoaID) {
+    public void setPessoaID(Long pessoaID) {
         this.pessoaID = pessoaID;
     }
 
@@ -130,12 +133,12 @@ public abstract class Pessoa {
         this.telefoneFixo = telefoneFixo;
     }
 
-    public Endereco getEndereco() {
-        return endereco;
+    public EnderecoEntity getEnderecoEntity() {
+        return enderecoEntity;
     }
 
-    public void setEndereco(Endereco endereco) {
-        this.endereco = endereco;
+    public void setEnderecoEntity(EnderecoEntity enderecoEntity) {
+        this.enderecoEntity = enderecoEntity;
     }
 
     public String getCidadeNatal() {
@@ -162,19 +165,19 @@ public abstract class Pessoa {
         this.estrangeiro = estrangeiro;
     }
 
-    public DadoAcademico getDadosAcademicos() {
+    public DadoAcademicoEntity getDadosAcademicos() {
         return dadosAcademicos;
     }
 
-    public void setDadosAcademicos(DadoAcademico dadosAcademicos) {
+    public void setDadosAcademicos(DadoAcademicoEntity dadosAcademicos) {
         this.dadosAcademicos = dadosAcademicos;
     }
 
-    public DadoProfissional getDadosProfissionais() {
+    public DadoProfissionalEntity getDadosProfissionais() {
         return dadosProfissionais;
     }
 
-    public void setDadosProfissionais(DadoProfissional dadosProfissionais) {
+    public void setDadosProfissionais(DadoProfissionalEntity dadosProfissionais) {
         this.dadosProfissionais = dadosProfissionais;
     }
 }

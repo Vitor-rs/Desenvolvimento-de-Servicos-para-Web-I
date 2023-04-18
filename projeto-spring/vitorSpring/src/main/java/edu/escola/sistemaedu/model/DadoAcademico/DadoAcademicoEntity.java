@@ -1,17 +1,15 @@
-package edu.escola.sistemaedu.model.entity;
+package edu.escola.sistemaedu.model.DadoAcademico;
 
 import jakarta.persistence.*;
 
-import java.util.UUID;
-
 @Entity
 @Table(name = "tb_dadoAcademico")
-public class DadoAcademico {
+public class DadoAcademicoEntity {
 
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private UUID dadoAcademicoID;
+    private Long dadoAcademicoID;
 
     @Column(name = "col_escolaridade_tb_dadoAcademico")
     private String serieEscolar;
@@ -25,11 +23,11 @@ public class DadoAcademico {
     @Column(name = "col_anoConclusao_tb_dadoAcademico")
     private String outros;
 
-    public UUID getDadoAcademicoID() {
+    public Long getDadoAcademicoID() {
         return dadoAcademicoID;
     }
 
-    public void setDadoAcademicoID(UUID dadoAcademicoID) {
+    public void setDadoAcademicoID(Long dadoAcademicoID) {
         this.dadoAcademicoID = dadoAcademicoID;
     }
 
