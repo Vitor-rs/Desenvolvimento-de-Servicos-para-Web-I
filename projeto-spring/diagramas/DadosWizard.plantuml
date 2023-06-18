@@ -1,0 +1,11 @@
+@startuml DadosWizard
+
+class Pessoa {
+    -Integer pessoa_id
+    -Varchar CPF
+    -Varchar RG
+    
+    
+}
+
+@enduml

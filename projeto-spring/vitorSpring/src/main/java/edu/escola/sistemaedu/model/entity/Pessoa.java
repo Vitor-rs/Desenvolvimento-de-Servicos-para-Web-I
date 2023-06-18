@@ -1,8 +1,5 @@
-package edu.escola.sistemaedu.model.Pessoa;
+package edu.escola.sistemaedu.model.entity;
 
-import edu.escola.sistemaedu.model.DadoAcademico.DadoAcademicoEntity;
-import edu.escola.sistemaedu.model.DadoProfissional.DadoProfissionalEntity;
-import edu.escola.sistemaedu.model.Endereco.EnderecoEntity;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -16,7 +13,7 @@ public abstract class Pessoa {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long pessoaID;
+    private UUID pessoaID;
 
     @Column
     private String nomeCompleto;
@@ -43,7 +40,7 @@ public abstract class Pessoa {
     private String telefoneFixo;
 
     @ManyToOne(cascade = CascadeType.ALL)
-    private EnderecoEntity enderecoEntity;
+    private Endereco endereco;
 
     @Column
     private String cidadeNatal;
@@ -55,104 +52,129 @@ public abstract class Pessoa {
     private boolean estrangeiro;
 
     @OneToOne(cascade = CascadeType.ALL)
-    private DadoAcademicoEntity dadosAcademicos;
+    private DadoAcademico dadosAcademicos;
 
     @OneToOne(cascade = CascadeType.ALL)
-    private DadoProfissionalEntity dadosProfissionais;
+    private DadoProfissional dadosProfissionais;
 
 
-    public Long getPessoaID() {
+    public UUID getPessoaID() {
         return pessoaID;
     }
-    public void setPessoaID(Long pessoaID) {
+
+    public void setPessoaID(UUID pessoaID) {
         this.pessoaID = pessoaID;
     }
+
     public String getNomeCompleto() {
         return nomeCompleto;
     }
+
     public void setNomeCompleto(String nomeCompleto) {
         this.nomeCompleto = nomeCompleto;
     }
+
     public String getCPF() {
         return CPF;
     }
+
     public void setCPF(String CPF) {
         this.CPF = CPF;
     }
+
     public String getRG() {
         return RG;
     }
+
     public void setRG(String RG) {
         this.RG = RG;
     }
+
     public Date getDataNascimento() {
         return dataNascimento;
     }
+
     public void setDataNascimento(Date dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
+
     public String getGenero() {
         return genero;
     }
+
     public void setGenero(String genero) {
         this.genero = genero;
     }
+
     public String getEmail() {
         return email;
     }
+
     public void setEmail(String email) {
         this.email = email;
     }
+
     public String getTelefoneCelular() {
         return telefoneCelular;
     }
+
     public void setTelefoneCelular(String telefoneCelular) {
         this.telefoneCelular = telefoneCelular;
     }
+
     public String getTelefoneFixo() {
         return telefoneFixo;
     }
+
     public void setTelefoneFixo(String telefoneFixo) {
         this.telefoneFixo = telefoneFixo;
     }
-    public EnderecoEntity getEnderecoEntity() {
-        return enderecoEntity;
+
+    public Endereco getEndereco() {
+        return endereco;
     }
-    public void setEnderecoEntity(EnderecoEntity enderecoEntity) {
-        this.enderecoEntity = enderecoEntity;
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
     }
+
     public String getCidadeNatal() {
         return cidadeNatal;
     }
+
     public void setCidadeNatal(String cidadeNatal) {
         this.cidadeNatal = cidadeNatal;
     }
+
     public String getEstadoNatal() {
         return estadoNatal;
     }
+
     public void setEstadoNatal(String estadoNatal) {
         this.estadoNatal = estadoNatal;
     }
+
     public boolean isEstrangeiro() {
         return estrangeiro;
     }
+
     public void setEstrangeiro(boolean estrangeiro) {
         this.estrangeiro = estrangeiro;
     }
 
-    public DadoAcademicoEntity getDadosAcademicos() {
+    public DadoAcademico getDadosAcademicos() {
         return dadosAcademicos;
     }
 
-    public void setDadosAcademicos(DadoAcademicoEntity dadosAcademicos) {
+    public void setDadosAcademicos(DadoAcademico dadosAcademicos) {
         this.dadosAcademicos = dadosAcademicos;
     }
 
-    public DadoProfissionalEntity getDadosProfissionais() {
+    public DadoProfissional getDadosProfissionais() {
         return dadosProfissionais;
     }
 
-    public void setDadosProfissionais(DadoProfissionalEntity dadosProfissionais) {
+    public void setDadosProfissionais(DadoProfissional dadosProfissionais) {
         this.dadosProfissionais = dadosProfissionais;
     }
 }

@@ -21,7 +21,7 @@ import java.util.List;
 @NoArgsConstructor
 @Getter
 @Setter
-public class AlunoEntityDto implements Serializable {
+public class AlunoDto implements Serializable {
     private Long pessoaID;
     private String nomeCompleto;
     private String CPF;
