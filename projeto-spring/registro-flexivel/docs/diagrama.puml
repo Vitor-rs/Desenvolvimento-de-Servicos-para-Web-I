@@ -1,7 +1,7 @@
 @startuml
 
 abstract class Pessoa {
-    -pessoaID: Long
+    -pessoaId: Long
     -nomeCompleto: string
     -CPF: string
     -RG: string
@@ -16,6 +16,11 @@ abstract class Pessoa {
     -estrangeiro: boolean
     -dadosAcademicos: DadoAcademico
     -dadosProfissionais: DadoProfissional
+}
+
+class vitor {
+ -nome: String
+ +idade: int
 }
 
 class Professor {
