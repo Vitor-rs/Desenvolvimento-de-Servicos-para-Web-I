@@ -6,7 +6,6 @@
 package edu.escola.sistemaedu.arch.dto;
 
 
-
 /**
  * @author santos
  */

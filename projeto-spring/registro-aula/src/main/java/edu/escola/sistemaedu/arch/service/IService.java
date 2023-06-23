@@ -6,7 +6,6 @@
 package edu.escola.sistemaedu.arch.service;
 
 import edu.escola.sistemaedu.arch.ISimpleMapper;
-
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

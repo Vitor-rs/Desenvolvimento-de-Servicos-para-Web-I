@@ -7,7 +7,6 @@ package edu.escola.sistemaedu.arch;
 
 import edu.escola.sistemaedu.arch.dto.AdapterBaseObjectDto;
 import edu.escola.sistemaedu.arch.dto.AdapterBaseObjectForm;
-
 import org.mapstruct.*;
 import org.springframework.data.domain.Page;
 
