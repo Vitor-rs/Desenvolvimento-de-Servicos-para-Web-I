@@ -17,10 +17,10 @@ public class DadoProfissional {
     @Id
     private Long dadoProfissionalId;
 
-	private String profissaoFuncaoCargo;
+    private String profissaoFuncaoCargo;
 
-	private String orgaoInstituicaoEmpresa;
+    private String orgaoInstituicaoEmpresa;
 
-	private String outros;
+    private String outros;
 
 }

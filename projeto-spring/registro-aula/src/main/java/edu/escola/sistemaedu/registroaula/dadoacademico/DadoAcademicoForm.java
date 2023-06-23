@@ -1,6 +1,9 @@
 package edu.escola.sistemaedu.registroaula.dadoacademico;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 
 
 @Builder

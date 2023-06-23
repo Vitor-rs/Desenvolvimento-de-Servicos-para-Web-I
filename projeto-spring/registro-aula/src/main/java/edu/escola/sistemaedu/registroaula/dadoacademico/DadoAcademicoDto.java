@@ -1,7 +1,8 @@
 package edu.escola.sistemaedu.registroaula.dadoacademico;
 
 import edu.escola.sistemaedu.arch.dto.AdapterBaseObjectDto;
-import lombok.*;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
 
