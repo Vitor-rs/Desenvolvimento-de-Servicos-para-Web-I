@@ -135,7 +135,6 @@ public class HelloController implements Initializable {
         });
 
 
-
         // Configurar a edição das células
         tableView.setEditable(true);
         tableView.getSelectionModel().cellSelectionEnabledProperty().set(true);
