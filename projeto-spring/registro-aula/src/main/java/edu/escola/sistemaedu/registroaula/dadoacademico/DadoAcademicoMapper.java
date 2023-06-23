@@ -1,15 +1,21 @@
 package edu.escola.sistemaedu.registroaula.dadoacademico;
 
+import edu.escola.sistemaedu.arch.BaseObjectMapper;
+import edu.escola.sistemaedu.arch.ISimpleMapper;
+import org.mapstruct.InheritConfiguration;
 import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 
-@Mapper
-public interface DadoAcademicoMapper {
-    DadoAcademicoMapper INSTANCE = Mappers.getMapper(DadoAcademicoMapper.class);
+@Mapper(config = BaseObjectMapper.class)
+public interface DadoAcademicoMapper extends ISimpleMapper<DadoAcademico, DadoAcademicoDto, DadoAcademicoForm> {
+    public static final DadoAcademicoMapper INSTANCE = Mappers.getMapper(DadoAcademicoMapper.class);
 
-    @Mapping(target = "dadoAcademicoId", ignore = true)
-    DadoAcademico toDadoAcademico(DadoAcademicoDto dto);
+    @InheritConfiguration(name = "toEntity")
+    @Override
+    public DadoAcademico formToEntity(DadoAcademicoForm dto);
 
-    DadoAcademicoDto toDadoAcademicoDto(DadoAcademico entity);
+
+    @InheritConfiguration(name = "update")
+    @Override
+public DadoAcademico update(DadoAcademicoForm dto, DadoAcademico entity);
 }

@@ -1,43 +1,28 @@
 package edu.escola.sistemaedu.registroaula.dadoacademico;
 
+import edu.escola.sistemaedu.arch.controller.AbstractBasicController;
 
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.util.UriComponentsBuilder;
+
+import java.net.URI;
 
 @RestController
-@RequestMapping("/dado-academico")
-public class DadoAcademicoController {
-    private final DadoAcademicoService dadoAcademicoService;
+@RequestMapping("/api/dadoacademico")
+public class DadoAcademicoController extends AbstractBasicController<DadoAcademico, DadoAcademicoDto, DadoAcademicoForm, DadoAcademicoRepository, DadoAcademicoService, Long> {
 
-    public DadoAcademicoController(DadoAcademicoService dadoAcademicoService) {
-        this.dadoAcademicoService = dadoAcademicoService;
+    @Autowired
+    @Override
+    public void setService(DadoAcademicoService service) {
+        this.service = service;
+        setMapper(DadoAcademicoMapper.INSTANCE);
     }
 
-    @PostMapping
-    public ResponseEntity<DadoAcademicoDto> createDadoAcademico(@RequestBody DadoAcademicoDto dto) {
-        DadoAcademicoDto createdDto = dadoAcademicoService.createDadoAcademico(dto);
-        return ResponseEntity.status(HttpStatus.CREATED).body(createdDto);
-    }
-
-    @GetMapping("/{id}")
-    public ResponseEntity<DadoAcademicoDto> getDadoAcademicoById(@PathVariable("id") Long id) {
-        DadoAcademicoDto dto = dadoAcademicoService.getDadoAcademicoById(id);
-        return ResponseEntity.ok(dto);
-    }
-
-    @PutMapping("/{id}")
-    public ResponseEntity<DadoAcademicoDto> updateDadoAcademico(
-            @PathVariable("id") Long id,
-            @RequestBody DadoAcademicoDto dto
-    ) {
-        DadoAcademicoDto updatedDto = dadoAcademicoService.updateDadoAcademico(id, dto);
-        return ResponseEntity.ok(updatedDto);
-    }
-
-    @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteDadoAcademico(@PathVariable("id") Long id) {
-        dadoAcademicoService.deleteDadoAcademico(id);
-        return ResponseEntity.noContent().build();
+    @Override
+    public URI createUri(DadoAcademico entity, UriComponentsBuilder uriBuilder) {
+        return uriBuilder.path("/campus/{id}")
+                .buildAndExpand(entity.getId())
+                .toUri();
     }
 }

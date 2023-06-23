@@ -1,14 +1,12 @@
 package edu.escola.sistemaedu.registroaula.dadoacademico;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-@Data
+
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@EqualsAndHashCode
 public class DadoAcademicoForm {
 
     private String serieEscolar;

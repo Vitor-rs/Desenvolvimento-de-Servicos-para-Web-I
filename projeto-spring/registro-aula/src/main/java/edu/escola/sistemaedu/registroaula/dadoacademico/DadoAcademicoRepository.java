@@ -1,8 +1,7 @@
 package edu.escola.sistemaedu.registroaula.dadoacademico;
 
-import edu.escola.sistemaedu.registroaula.dadoacademico.DadoAcademico;
-import org.springframework.data.jpa.repository.JpaRepository;
+import edu.escola.sistemaedu.arch.repository.IArchRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface DadoAcademicoRepository extends JpaRepository<DadoAcademico, Long> {}
+public interface DadoAcademicoRepository extends IArchRepository<DadoAcademico, Long> {}
