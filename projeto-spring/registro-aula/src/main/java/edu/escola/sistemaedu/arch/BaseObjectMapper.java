@@ -3,11 +3,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
  */
 
-package edu.escola.sistemaedu.arch.controller;
+package edu.escola.sistemaedu.arch;
 
-import edu.escola.sistemaedu.arch.AdapterBaseObjectDto;
-import edu.escola.sistemaedu.arch.AdapterBaseObjectForm;
-import edu.escola.sistemaedu.arch.IBase;
+import edu.escola.sistemaedu.arch.dto.AdapterBaseObjectDto;
+import edu.escola.sistemaedu.arch.dto.AdapterBaseObjectForm;
+
 import org.mapstruct.*;
 import org.springframework.data.domain.Page;
 

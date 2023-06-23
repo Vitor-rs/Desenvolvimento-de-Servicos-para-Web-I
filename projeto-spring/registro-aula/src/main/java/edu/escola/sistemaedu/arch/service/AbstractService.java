@@ -5,16 +5,15 @@
 
 package edu.escola.sistemaedu.arch.service;
 
-import edu.escola.sistemaedu.arch.exception.BaseObjectNotFoundException;
+import edu.escola.sistemaedu.arch.BaseObjectNotFoundException;
+import edu.escola.sistemaedu.arch.ISimpleMapper;
+import edu.escola.sistemaedu.arch.MapperUtils;
 import edu.escola.sistemaedu.arch.repository.IArchRepository;
-import edu.escola.sistemaedu.arch.utils.ISimpleMapper;
-import edu.escola.sistemaedu.arch.utils.MapperUtils;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
 import java.util.List;
 import java.util.Optional;
-
 /**
  * @param <T>
  * @param <K>

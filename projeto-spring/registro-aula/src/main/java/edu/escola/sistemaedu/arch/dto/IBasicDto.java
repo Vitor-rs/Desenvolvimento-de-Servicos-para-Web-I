@@ -4,7 +4,7 @@
  */
 
 package edu.escola.sistemaedu.arch.dto;
-import edu.escola.sistemaedu.arch.IBase;
+
 
 
 /**
