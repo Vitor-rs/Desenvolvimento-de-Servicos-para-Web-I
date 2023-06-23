@@ -3,8 +3,14 @@
 !define ENTITYMODERN
 !define ENTITY_LINE_THICKNESS 2
 
-abstract class Pessoa {
-    -pessoaID: int
+abstract class BaseObject {
+    -id: Long
+    -nome: String
+    +getId(): Long
+    +setId(id: Long): void
+}
+
+abstract class Pessoa extends BaseObject {
     -nomeCompleto: string
     -CPF: string
     -RG: string
@@ -23,8 +29,6 @@ abstract class Pessoa {
 
 class Professor {
     -especialidade: string
-    -login: string
-    -senha: string
 }
 
 class Aluno {
@@ -47,52 +51,52 @@ class Endereco {
 }
 
 class DadoAcademico {
-    -dadoAcademicoID: int
-    -serieEscolar: string
-    -escolaridadeAtual: string
-    -orgaoInstituicaoEmpresa: string
-    -outros: string
+    -dadoAcademicoId: Long
+    -serieEscolar: String
+    -escolaridadeAtual: String
+    -orgaoInstituicaoEmpresa: String
+    -outros: String
 }
 
 class DadoProfissional {
-    -dadoProfissionalID: int
-    -profissaoFuncaoCargo: string
-    -orgaoInstituicaoEmpresa: string
-    -outros: string
+    -dadoProfissionalId: Long
+    -profissaoFuncaoCargo: String
+    -orgaoInstituicaoEmpresa: String
+    -outros: String
 }
 
 class Contrato {
-    -contratoID: int
-    -situacaoContrato: string
-    -numeroContrato: string
-    -tipoContrato: string
-    -contratante: string
-    -modalidade: string
-    -dataInicio: date
-    -dataTermino: date
+    -contratoId: Long
+    -situacaoContrato: String
+    -numeroContrato: String
+    -tipoContrato: String
+    -contratante: String
+    -modalidade: String
+    -dataInicio: String
+    -dataTermino: String
     -matricula: Matricula
 }
 
 class Matricula {
-    -matriculaID: int
-    -atual: boolean
+    -matriculaID: Long
+    -atual: Boolean
     -curso: Curso
-    -metodologia: string
-    -dataInicioMatricula: date
-    -dataFimMatricula: date
+    -metodologia: String
+    -dataInicioMatricula: String
+    -dataFimMatricula: String
     -professor: Professor[*]
     -numHorasAulaCurso: int
     -duracaoCurso: int
-    -diasDaSemana: string
-    -horário: string
+    -diasDaSemana: String
+    -horário: String
 }
 
 class Curso {
-    -cursoID: int
-    -metodologia: string
+    -cursoId: Long
+    -metodologia: String
     -numHorasAulaCurso: int
     -duracaoCurso: int
-    -descricao: string
+    -descricao: String
 }
 
 Pessoa <|-- Aluno

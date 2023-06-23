@@ -1,10 +1,8 @@
-package gestao;
-
-import java.util.Collection;
+package edu.escola.sistemaedu.registroaula.enderecologradouro;
 
 public class EnderecoLogradouro {
 
-	private long enderecoId;
+    private Long enderecoId;
 
 	private String CEP;
 
@@ -21,7 +19,5 @@ public class EnderecoLogradouro {
 	private String cidadeAtual;
 
 	private String estadoAtual;
-
-	private Collection<Pessoa> pessoa;
 
 }
