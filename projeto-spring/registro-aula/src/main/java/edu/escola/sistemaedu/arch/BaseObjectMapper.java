@@ -2,14 +2,17 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
  */
-package br.edu.ifms.arch;
 
-import br.edu.ifms.arch.dto.AdapterBaseObjectDto;
-import br.edu.ifms.arch.dto.AdapterBaseObjectForm;
+package edu.escola.sistemaedu.arch.controller;
+
+import edu.escola.sistemaedu.arch.AdapterBaseObjectDto;
+import edu.escola.sistemaedu.arch.AdapterBaseObjectForm;
+import edu.escola.sistemaedu.arch.IBase;
 import org.mapstruct.*;
 import org.springframework.data.domain.Page;
 
 import java.util.List;
+
 
 /**
  * @author 1513003

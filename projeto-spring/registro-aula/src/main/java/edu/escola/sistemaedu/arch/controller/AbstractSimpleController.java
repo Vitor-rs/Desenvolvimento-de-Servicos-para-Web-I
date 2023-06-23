@@ -2,14 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package br.edu.ifms.arch.controller;
 
-import br.edu.ifms.arch.ISimpleMapper;
-import br.edu.ifms.arch.MapperUtils;
-import br.edu.ifms.arch.repository.IArchRepository;
-import br.edu.ifms.arch.service.IService;
-import jakarta.transaction.Transactional;
-import jakarta.validation.Valid;
+package edu.escola.sistemaedu.arch.controller;
+
+import edu.escola.sistemaedu.arch.mapper.ISimpleMapper;
+import edu.escola.sistemaedu.arch.repository.IArchRepository;
+import edu.escola.sistemaedu.arch.service.IService;
+import edu.escola.sistemaedu.arch.utils.MapperUtils;
 import org.springframework.context.annotation.Profile;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -18,6 +17,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
 
+import javax.transaction.Transactional;
+import javax.validation.Valid;
 import java.net.URI;
 import java.util.List;
 

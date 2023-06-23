@@ -2,12 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package br.edu.ifms.arch.service;
 
-import br.edu.ifms.arch.BaseObjectNotFoundException;
-import br.edu.ifms.arch.ISimpleMapper;
-import br.edu.ifms.arch.MapperUtils;
-import br.edu.ifms.arch.repository.IArchRepository;
+package edu.escola.sistemaedu.arch.service;
+
+import edu.escola.sistemaedu.arch.exception.BaseObjectNotFoundException;
+import edu.escola.sistemaedu.arch.repository.IArchRepository;
+import edu.escola.sistemaedu.arch.utils.ISimpleMapper;
+import edu.escola.sistemaedu.arch.utils.MapperUtils;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

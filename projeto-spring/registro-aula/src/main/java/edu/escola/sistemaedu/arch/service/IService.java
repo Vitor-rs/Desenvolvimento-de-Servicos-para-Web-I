@@ -2,9 +2,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
  */
-package br.edu.ifms.arch.service;
 
-import br.edu.ifms.arch.ISimpleMapper;
+package edu.escola.sistemaedu.arch.service;
+
+import edu.escola.sistemaedu.arch.ISimpleMapper;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
