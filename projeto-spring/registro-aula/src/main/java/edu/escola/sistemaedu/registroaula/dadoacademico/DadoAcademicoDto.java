@@ -5,11 +5,13 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
+import java.io.Serializable;
+
 
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 @SuperBuilder
-public class DadoAcademicoDto extends AdapterBaseObjectDto {
+public class DadoAcademicoDto extends AdapterBaseObjectDto implements Serializable {
 
     // private Long dadoAcademicoId; Já está no AdapterBaseObjectDto
     private String serieEscolar;
