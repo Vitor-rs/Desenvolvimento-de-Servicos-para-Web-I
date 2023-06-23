@@ -14,7 +14,6 @@ public interface DadoAcademicoMapper extends ISimpleMapper<DadoAcademico, DadoAc
     @Override
     public DadoAcademico formToEntity(DadoAcademicoForm dto);
 
-
     @InheritConfiguration(name = "update")
     @Override
     public DadoAcademico update(DadoAcademicoForm dto, DadoAcademico entity);
