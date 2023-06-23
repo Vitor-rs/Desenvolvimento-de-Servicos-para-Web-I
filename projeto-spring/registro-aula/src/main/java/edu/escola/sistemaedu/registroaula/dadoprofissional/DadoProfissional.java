@@ -1,11 +1,12 @@
 package edu.escola.sistemaedu.registroaula.dadoprofissional;
 
 import edu.escola.sistemaedu.arch.BaseObject;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.SequenceGenerator;
-
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
 @Data
