@@ -1,6 +1,7 @@
 package edu.escola.sistemaedu.registroaula.dadoprofissional;
 
 import edu.escola.sistemaedu.arch.controller.AbstractBasicController;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.util.UriComponentsBuilder;
 
@@ -17,7 +18,7 @@ public class DadoProfissionalController extends AbstractBasicController<DadoProf
 
     @Override
     public URI createUri(DadoProfissional entity, UriComponentsBuilder uriBuilder) {
-        return uriBuilder.path("/campus/{id}")
+        return uriBuilder.path("/dadoprofissional/{id}")
                 .buildAndExpand(entity.getId())
                 .toUri();
     }

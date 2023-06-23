@@ -21,7 +21,7 @@ public class DadoAcademicoController extends AbstractBasicController<DadoAcademi
 
     @Override
     public URI createUri(DadoAcademico entity, UriComponentsBuilder uriBuilder) {
-        return uriBuilder.path("/campus/{id}")
+        return uriBuilder.path("/dadoacademico/{id}")
                 .buildAndExpand(entity.getId())
                 .toUri();
     }
