@@ -1,7 +1,6 @@
-package edu.escola.sistemaedu.registroaula.dadoacademico.controller;
+package edu.escola.sistemaedu.registroaula.dadoacademico;
 
-import edu.escola.sistemaedu.registroaula.dadoacademico.DadoAcademicoDto;
-import edu.escola.sistemaedu.registroaula.dadoacademico.DadoAcademicoService;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
