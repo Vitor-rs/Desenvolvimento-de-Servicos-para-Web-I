@@ -2,12 +2,9 @@ package edu.escola.sistemaedu.registroaula.registrofrequenciaaula;
 
 import edu.escola.sistemaedu.registroaula.matricula.Matricula;
 import edu.escola.sistemaedu.registroaula.professor.Professor;
-
 import jakarta.persistence.*;
-
 import lombok.*;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;

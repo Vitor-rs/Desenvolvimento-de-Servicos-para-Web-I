@@ -2,8 +2,6 @@ package edu.escola.sistemaedu.registroaula.apostila;
 
 import edu.escola.sistemaedu.arch.dto.AdapterBaseObjectDto;
 import edu.escola.sistemaedu.registroaula.curso.Curso;
-
-import jakarta.persistence.OneToOne;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.SuperBuilder;

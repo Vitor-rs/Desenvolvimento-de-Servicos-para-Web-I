@@ -2,7 +2,8 @@ package edu.escola.sistemaedu.registroaula.curso;
 
 import edu.escola.sistemaedu.arch.BaseObjectMapper;
 import edu.escola.sistemaedu.arch.ISimpleMapper;
-import org.mapstruct.*;
+import org.mapstruct.InheritConfiguration;
+import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
 @Mapper(config = BaseObjectMapper.class)

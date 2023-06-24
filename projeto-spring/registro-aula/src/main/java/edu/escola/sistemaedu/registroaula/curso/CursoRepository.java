@@ -5,4 +5,5 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface CursoRepository extends IArchRepository<Curso, Long>, JpaSpecificationExecutor<Curso> {}
+public interface CursoRepository extends IArchRepository<Curso, Long>, JpaSpecificationExecutor<Curso> {
+}

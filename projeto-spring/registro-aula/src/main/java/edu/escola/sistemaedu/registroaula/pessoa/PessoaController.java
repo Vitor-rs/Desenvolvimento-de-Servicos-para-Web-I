@@ -1,7 +1,6 @@
 package edu.escola.sistemaedu.registroaula.pessoa;
 
 import edu.escola.sistemaedu.arch.controller.AbstractBasicController;
-
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;

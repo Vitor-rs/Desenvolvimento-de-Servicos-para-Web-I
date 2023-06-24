@@ -1,7 +1,6 @@
 package edu.escola.sistemaedu.registroaula.dadoprofissional;
 
 import edu.escola.sistemaedu.arch.controller.AbstractBasicController;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.util.UriComponentsBuilder;
 

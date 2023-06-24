@@ -2,20 +2,20 @@ package gestao;
 
 public class Matricula {
 
-	private long matriculaId;
+    private long matriculaId;
 
-	private boolean ePrimeiraMatricula;
+    private boolean ePrimeiraMatricula;
 
-	private boolean atual;
+    private boolean atual;
 
-	private LocalDate dataInicio;
+    private LocalDate dataInicio;
 
-	private LocalDate dataFim;
+    private LocalDate dataFim;
 
-	private String cursoBaseadoEmHorasOuPeriodo;
+    private String cursoBaseadoEmHorasOuPeriodo;
 
-	private RegistroFrequenciaAula registroFrequenciaAula;
+    private RegistroFrequenciaAula registroFrequenciaAula;
 
-	private Contrato contrato;
+    private Contrato contrato;
 
 }

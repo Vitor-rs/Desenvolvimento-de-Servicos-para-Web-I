@@ -2,11 +2,7 @@ package edu.escola.sistemaedu.registroaula.registrofrequenciaaula;
 
 import edu.escola.sistemaedu.registroaula.matricula.MatriculaDto;
 import edu.escola.sistemaedu.registroaula.professor.ProfessorDto;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;

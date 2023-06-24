@@ -1,7 +1,6 @@
 package edu.escola.sistemaedu.registroaula.enderecologradouro;
 
 import edu.escola.sistemaedu.arch.dto.AdapterBaseObjectDto;
-
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.SuperBuilder;

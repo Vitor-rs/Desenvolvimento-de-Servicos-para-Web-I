@@ -4,14 +4,14 @@ import java.util.Collection;
 
 public class DadoProfissional {
 
-	private long dadoProfissionalId;
+    private long dadoProfissionalId;
 
-	private String profissaoFuncaoCargo;
+    private String profissaoFuncaoCargo;
 
-	private String orgaoInstituicaoEmpresa;
+    private String orgaoInstituicaoEmpresa;
 
-	private String outros;
+    private String outros;
 
-	private Collection<Pessoa> pessoa;
+    private Collection<Pessoa> pessoa;
 
 }

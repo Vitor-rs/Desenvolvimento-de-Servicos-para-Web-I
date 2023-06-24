@@ -4,4 +4,5 @@ import edu.escola.sistemaedu.arch.repository.IArchRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface AlunoRepository extends IArchRepository<Aluno, Long> {}
+public interface AlunoRepository extends IArchRepository<Aluno, Long> {
+}

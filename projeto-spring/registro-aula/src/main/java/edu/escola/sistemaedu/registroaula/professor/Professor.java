@@ -1,7 +1,10 @@
 package edu.escola.sistemaedu.registroaula.professor;
 
 import edu.escola.sistemaedu.registroaula.pessoa.Pessoa;
-import jakarta.persistence.*;
+import jakarta.persistence.DiscriminatorValue;
+import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;

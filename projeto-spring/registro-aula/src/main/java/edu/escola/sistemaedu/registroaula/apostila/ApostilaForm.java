@@ -2,7 +2,6 @@ package edu.escola.sistemaedu.registroaula.apostila;
 
 import edu.escola.sistemaedu.arch.dto.AdapterBaseObjectForm;
 import edu.escola.sistemaedu.registroaula.curso.Curso;
-import jakarta.persistence.ManyToOne;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;

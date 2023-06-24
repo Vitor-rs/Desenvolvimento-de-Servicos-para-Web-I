@@ -3,7 +3,6 @@ package edu.escola.sistemaedu.registroaula.pessoa;
 import edu.escola.sistemaedu.registroaula.dadoacademico.DadoAcademico;
 import edu.escola.sistemaedu.registroaula.dadoprofissional.DadoProfissional;
 import edu.escola.sistemaedu.registroaula.enderecologradouro.EnderecoLogradouro;
-
 import jakarta.persistence.*;
 import lombok.*;
 

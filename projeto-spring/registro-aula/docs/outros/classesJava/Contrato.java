@@ -2,24 +2,24 @@ package gestao;
 
 public class Contrato {
 
-	private long contratoId;
+    private long contratoId;
 
-	private String situacaoContrato;
+    private String situacaoContrato;
 
-	private String tipoContrato;
+    private String tipoContrato;
 
-	private String contratante;
+    private String contratante;
 
-	private String modalidade;
+    private String modalidade;
 
-	private LocalDate dataInicio;
+    private LocalDate dataInicio;
 
-	private LocalDate dataTermino;
+    private LocalDate dataTermino;
 
-	private Curso curso;
+    private Curso curso;
 
-	private Aluno aluno;
+    private Aluno aluno;
 
-	private Matricula matricula;
+    private Matricula matricula;
 
 }

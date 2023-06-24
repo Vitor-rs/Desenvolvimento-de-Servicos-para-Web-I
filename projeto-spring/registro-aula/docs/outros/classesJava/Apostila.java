@@ -2,20 +2,20 @@ package gestao;
 
 public class Apostila {
 
-	private long apostilaId;
+    private long apostilaId;
 
-	private String nome;
+    private String nome;
 
-	private String conteudoMateria;
+    private String conteudoMateria;
 
-	private int idadeMinima;
+    private int idadeMinima;
 
-	private int idadeMaxima;
+    private int idadeMaxima;
 
-	private int numeroLicoes;
+    private int numeroLicoes;
 
-	private int numeroHoras;
+    private int numeroHoras;
 
-	private Curso curso;
+    private Curso curso;
 
 }

@@ -4,14 +4,14 @@ import java.util.Collection;
 
 public class DadoAcademico {
 
-	private long dadoAcademicoId;
+    private long dadoAcademicoId;
 
-	private String serieEscolar;
+    private String serieEscolar;
 
-	private String escolaridadeAtual;
+    private String escolaridadeAtual;
 
-	private String orgaoInstituicaoEmpresa;
+    private String orgaoInstituicaoEmpresa;
 
-	private Collection<Pessoa> pessoa;
+    private Collection<Pessoa> pessoa;
 
 }

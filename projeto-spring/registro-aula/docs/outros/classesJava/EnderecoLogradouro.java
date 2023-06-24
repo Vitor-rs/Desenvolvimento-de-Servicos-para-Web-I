@@ -4,24 +4,24 @@ import java.util.Collection;
 
 public class EnderecoLogradouro {
 
-	private long enderecoId;
+    private long enderecoId;
 
-	private String CEP;
+    private String CEP;
 
-	private String tipo;
+    private String tipo;
 
-	private String nome;
+    private String nome;
 
-	private int numero;
+    private int numero;
 
-	private String complemento;
+    private String complemento;
 
-	private String bairro;
+    private String bairro;
 
-	private String cidadeAtual;
+    private String cidadeAtual;
 
-	private String estadoAtual;
+    private String estadoAtual;
 
-	private Collection<Pessoa> pessoa;
+    private Collection<Pessoa> pessoa;
 
 }

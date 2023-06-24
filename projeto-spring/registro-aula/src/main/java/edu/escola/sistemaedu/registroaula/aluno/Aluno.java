@@ -4,7 +4,6 @@ import edu.escola.sistemaedu.registroaula.contrato.Contrato;
 import edu.escola.sistemaedu.registroaula.curso.Curso;
 import edu.escola.sistemaedu.registroaula.matricula.Matricula;
 import edu.escola.sistemaedu.registroaula.pessoa.Pessoa;
-
 import jakarta.persistence.*;
 import lombok.*;
 

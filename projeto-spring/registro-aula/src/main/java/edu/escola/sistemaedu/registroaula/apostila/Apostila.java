@@ -2,11 +2,9 @@ package edu.escola.sistemaedu.registroaula.apostila;
 
 import edu.escola.sistemaedu.arch.BaseObject;
 import edu.escola.sistemaedu.registroaula.curso.Curso;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.SequenceGenerator;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;

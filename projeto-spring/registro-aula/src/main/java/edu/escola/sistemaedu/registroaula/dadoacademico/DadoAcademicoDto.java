@@ -11,7 +11,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 @EqualsAndHashCode
 @Builder
-public class DadoAcademicoDto  implements Serializable {
+public class DadoAcademicoDto implements Serializable {
 
     private String serieEscolar;
     private String escolaridadeAtual;

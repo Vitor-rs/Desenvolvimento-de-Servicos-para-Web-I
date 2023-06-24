@@ -1,7 +1,6 @@
 package edu.escola.sistemaedu.registroaula.dadoacademico;
 
 import edu.escola.sistemaedu.arch.service.AbstractBasicService;
-
 import org.springframework.stereotype.Service;
 
 @Service

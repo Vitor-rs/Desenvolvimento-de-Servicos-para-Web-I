@@ -3,12 +3,7 @@ package edu.escola.sistemaedu.registroaula.matricula;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.SequenceGenerator;
-
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Data
 @EqualsAndHashCode

@@ -3,7 +3,9 @@ package edu.escola.sistemaedu.registroaula.pessoa;
 import edu.escola.sistemaedu.registroaula.dadoacademico.DadoAcademicoDto;
 import edu.escola.sistemaedu.registroaula.dadoprofissional.DadoProfissionalDto;
 import edu.escola.sistemaedu.registroaula.enderecologradouro.EnderecoLogradouroDto;
-import lombok.*;
+import lombok.Builder;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 

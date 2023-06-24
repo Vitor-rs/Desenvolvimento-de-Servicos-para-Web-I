@@ -2,9 +2,9 @@ package edu.escola.sistemaedu.registroaula.contrato;
 
 import edu.escola.sistemaedu.arch.BaseObjectMapper;
 import edu.escola.sistemaedu.arch.ISimpleMapper;
-
+import org.mapstruct.InheritConfiguration;
+import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
-import org.mapstruct.*;
 
 @Mapper(config = BaseObjectMapper.class)
 public interface ContratoMapper extends ISimpleMapper<Contrato, ContratoDto, ContratoForm> {

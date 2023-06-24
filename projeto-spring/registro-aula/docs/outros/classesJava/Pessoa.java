@@ -2,34 +2,34 @@ package gestao;
 
 public abstract class Pessoa {
 
-	private long pessoaId;
+    private long pessoaId;
 
-	private String nomeCompleto;
+    private String nomeCompleto;
 
-	private String CPF;
+    private String CPF;
 
-	private String RG;
+    private String RG;
 
-	private char genero;
+    private char genero;
 
-	private LocalDate dataNascimento;
+    private LocalDate dataNascimento;
 
-	private boolean estrangeiro;
+    private boolean estrangeiro;
 
-	private String email;
+    private String email;
 
-	private String numeroTelCelular;
+    private String numeroTelCelular;
 
-	private String numeroTelFixo;
+    private String numeroTelFixo;
 
-	private String cidadeNatal;
+    private String cidadeNatal;
 
-	private String estadoNatal;
+    private String estadoNatal;
 
-	private DadoAcademico dadoAcademico;
+    private DadoAcademico dadoAcademico;
 
-	private DadoProfissional dadoProfissional;
+    private DadoProfissional dadoProfissional;
 
-	private EnderecoLogradouro enderecoLogradouro;
+    private EnderecoLogradouro enderecoLogradouro;
 
 }

@@ -5,4 +5,5 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface MatriculaRepository extends IArchRepository<Matricula, Long>, JpaSpecificationExecutor<Matricula> {}
+public interface MatriculaRepository extends IArchRepository<Matricula, Long>, JpaSpecificationExecutor<Matricula> {
+}

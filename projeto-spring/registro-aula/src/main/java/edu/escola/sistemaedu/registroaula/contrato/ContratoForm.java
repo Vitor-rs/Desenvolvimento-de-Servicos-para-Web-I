@@ -3,7 +3,6 @@ package edu.escola.sistemaedu.registroaula.contrato;
 import edu.escola.sistemaedu.registroaula.aluno.AlunoForm;
 import edu.escola.sistemaedu.registroaula.curso.CursoForm;
 import edu.escola.sistemaedu.registroaula.matricula.MatriculaForm;
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;

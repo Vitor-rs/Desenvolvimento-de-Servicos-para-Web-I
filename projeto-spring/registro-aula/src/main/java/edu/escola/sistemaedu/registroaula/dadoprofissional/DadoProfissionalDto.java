@@ -12,7 +12,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 @EqualsAndHashCode
 @Builder
-public class DadoProfissionalDto  implements Serializable {
+public class DadoProfissionalDto implements Serializable {
 
     private String profissaoFuncaoCargo;
     private String orgaoInstituicaoEmpresa;

@@ -6,7 +6,6 @@ package edu.escola.sistemaedu.arch.controller;
 
 import edu.escola.sistemaedu.arch.repository.IArchRepository;
 import edu.escola.sistemaedu.arch.service.IBasicService;
-
 import org.springframework.context.annotation.Profile;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -15,7 +14,6 @@ import org.springframework.data.web.PageableDefault;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-
 
 
 /**

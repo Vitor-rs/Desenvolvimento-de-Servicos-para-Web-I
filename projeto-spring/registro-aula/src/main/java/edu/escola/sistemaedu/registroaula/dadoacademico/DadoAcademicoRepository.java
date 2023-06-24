@@ -4,4 +4,5 @@ import edu.escola.sistemaedu.arch.repository.IArchRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface DadoAcademicoRepository extends IArchRepository<DadoAcademico, Long> {}
+public interface DadoAcademicoRepository extends IArchRepository<DadoAcademico, Long> {
+}
