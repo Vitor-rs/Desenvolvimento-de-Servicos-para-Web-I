@@ -15,6 +15,7 @@ import lombok.NoArgsConstructor;
 @DiscriminatorValue("PROFESSOR")
 public class Professor extends Pessoa {
 
-    private String especialidade;
+    @Enumerated(EnumType.STRING)
+    private Especialidade especialidade;
 
 }

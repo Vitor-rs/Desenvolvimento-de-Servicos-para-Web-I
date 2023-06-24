@@ -1,24 +1,21 @@
 package edu.escola.sistemaedu.registroaula.dadoacademico;
 
-import edu.escola.sistemaedu.arch.BaseObject;
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import jakarta.persistence.SequenceGenerator;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
-import lombok.experimental.SuperBuilder;
+import lombok.*;
 
 @Data
 @EqualsAndHashCode
 @AllArgsConstructor
 @NoArgsConstructor
-@SuperBuilder
+@Builder
 @SequenceGenerator(name = "dadoAcademicoSequence", sequenceName = "dado_academico_seq", allocationSize = 1)
 @Entity
-public class DadoAcademico extends BaseObject {
+public class DadoAcademico {
 
-    // private Long dadoAcademicoId; Atributo não necessário, pois o id já está sendo gerado automaticamente pelo sequence generator
+    @Id
+    private Long id;
 
     private String serieEscolar;
 

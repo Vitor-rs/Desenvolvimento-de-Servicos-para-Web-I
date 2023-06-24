@@ -1,20 +1,18 @@
 package edu.escola.sistemaedu.registroaula.dadoprofissional;
 
-import edu.escola.sistemaedu.arch.dto.AdapterBaseObjectDto;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.EqualsAndHashCode;
-import lombok.experimental.SuperBuilder;
 
 import java.io.Serializable;
-
 
 /**
  * DTO for {@link DadoProfissional}
  */
 @AllArgsConstructor
-@EqualsAndHashCode(callSuper = true)
-@SuperBuilder
-public class DadoProfissionalDto extends AdapterBaseObjectDto implements Serializable {
+@EqualsAndHashCode
+@Builder
+public class DadoProfissionalDto  implements Serializable {
 
     private String profissaoFuncaoCargo;
     private String orgaoInstituicaoEmpresa;

@@ -2,6 +2,7 @@ package edu.escola.sistemaedu.registroaula.apostila;
 
 import edu.escola.sistemaedu.arch.dto.AdapterBaseObjectForm;
 import edu.escola.sistemaedu.registroaula.curso.Curso;
+import jakarta.persistence.ManyToOne;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
@@ -13,12 +14,11 @@ import lombok.experimental.SuperBuilder;
 @EqualsAndHashCode(callSuper = true)
 public class ApostilaForm extends AdapterBaseObjectForm {
 
-    // private String nome; Já está no AdapterBaseObjectDto
-
     private String conteudoMateria;
     private Integer idadeMinima;
     private Integer idadeMaxima;
     private Integer numeroLicoes;
     private Integer numeroHoras;
     private Curso curso;
+
 }

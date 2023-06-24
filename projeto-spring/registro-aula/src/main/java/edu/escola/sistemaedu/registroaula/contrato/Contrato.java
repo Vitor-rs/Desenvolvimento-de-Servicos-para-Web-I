@@ -5,6 +5,7 @@ import edu.escola.sistemaedu.registroaula.curso.Curso;
 import edu.escola.sistemaedu.registroaula.matricula.Matricula;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.SequenceGenerator;
 import lombok.*;
 
@@ -18,15 +19,22 @@ import lombok.*;
 public class Contrato {
 
     @Id
-    private Long contratoId;
+    private Long id;
+
     private String situacaoContrato;
     private String tipoContrato;
     private String contratante;
     private String modalidade;
     private String dataInicio;
     private String dataTermino;
+
+    @ManyToOne
     private Curso curso;
+
+    @ManyToOne
     private Aluno aluno;
+
+    @ManyToOne
     private Matricula matricula;
 
 }

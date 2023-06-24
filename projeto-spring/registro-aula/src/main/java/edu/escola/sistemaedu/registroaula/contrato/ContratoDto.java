@@ -1,12 +1,12 @@
 package edu.escola.sistemaedu.registroaula.contrato;
 
 import edu.escola.sistemaedu.registroaula.aluno.AlunoDto;
-import edu.escola.sistemaedu.registroaula.curso.Curso;
-import edu.escola.sistemaedu.registroaula.matricula.Matricula;
-import jakarta.persistence.Id;
+import edu.escola.sistemaedu.registroaula.curso.CursoDto;
+import edu.escola.sistemaedu.registroaula.matricula.MatriculaDto;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
@@ -16,17 +16,20 @@ import java.io.Serializable;
 @EqualsAndHashCode
 @Builder
 @AllArgsConstructor
+@NoArgsConstructor
 public class ContratoDto implements Serializable {
 
-    @Id
-    private Long contratoId;
+    private Long id;
+
     private String situacaoContrato;
     private String tipoContrato;
     private String contratante;
     private String modalidade;
     private String dataInicio;
     private String dataTermino;
-    private Curso curso;
+
+    private CursoDto curso;
     private AlunoDto aluno;
-    private Matricula matricula;
+    private MatriculaDto matricula;
+
 }

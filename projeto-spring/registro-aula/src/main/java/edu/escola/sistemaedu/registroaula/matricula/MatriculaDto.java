@@ -1,6 +1,5 @@
 package edu.escola.sistemaedu.registroaula.matricula;
 
-
 import lombok.*;
 
 import java.io.Serializable;

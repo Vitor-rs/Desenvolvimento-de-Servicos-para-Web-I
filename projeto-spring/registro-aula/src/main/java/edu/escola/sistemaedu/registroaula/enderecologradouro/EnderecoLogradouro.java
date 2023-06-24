@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
 @Data
-@EqualsAndHashCode
+@EqualsAndHashCode(callSuper = true)
 @AllArgsConstructor
 @NoArgsConstructor
 @SuperBuilder
@@ -18,8 +18,9 @@ import lombok.experimental.SuperBuilder;
 @Entity
 public class EnderecoLogradouro extends BaseObject {
 
-    // private Long enderecoId; Atributo não necessário, pois o id já está sendo gerado automaticamente pelo sequence generator
-    // private String nome; Atributo não necessário, pois o nome já está sendo gerado automaticamente pelo sequence generator
+    // private Long enderecoId;
+    // private String nome;
+
 
     private String CEP;
 

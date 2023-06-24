@@ -4,7 +4,11 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.SequenceGenerator;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 
 @Data
 @EqualsAndHashCode
@@ -16,11 +20,10 @@ import lombok.*;
 public class Matricula {
 
     @Id
-    private Long matriculaId;
+    private Long id;
     private Boolean ePrimeiraMatricula;
     private Boolean eAtual;
     private String dataInicio;
     private String dataFim;
     private String cursoBaseadoEmHorasOuPeriodo;
-
 }
