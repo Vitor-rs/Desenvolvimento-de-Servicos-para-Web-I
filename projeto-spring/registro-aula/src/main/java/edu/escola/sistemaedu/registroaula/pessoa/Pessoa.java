@@ -19,7 +19,7 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 @SuperBuilder
 @SequenceGenerator(name = "pessoaSequence", sequenceName = "pessoa_seq", allocationSize = 1)
-@Entity
+
 public abstract class Pessoa extends BaseObject {
 
     // private long pessoaId; Já existe no BaseObject

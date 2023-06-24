@@ -24,13 +24,13 @@ public class Apostila extends BaseObject {
 
 	private String conteudoMateria;
 
-	private int idadeMinima;
+	private Integer idadeMinima;
 
-	private int idadeMaxima;
+	private Integer idadeMaxima;
 
-	private int numeroLicoes;
+	private Integer numeroLicoes;
 
-	private int numeroHoras;
+	private Integer numeroHoras;
 
 	private Curso curso;
 

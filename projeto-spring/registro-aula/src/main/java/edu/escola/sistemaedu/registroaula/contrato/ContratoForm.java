@@ -1,24 +1,20 @@
 package edu.escola.sistemaedu.registroaula.contrato;
 
-import edu.escola.sistemaedu.registroaula.aluno.Aluno;
+import edu.escola.sistemaedu.registroaula.aluno.AlunoDto;
 import edu.escola.sistemaedu.registroaula.curso.Curso;
 import edu.escola.sistemaedu.registroaula.matricula.Matricula;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.SequenceGenerator;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 
-@Data
-@EqualsAndHashCode
+
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
-@Entity
-@SequenceGenerator(sequenceName = "contratoSequence", name = "contrato_seq", allocationSize = 1)
-public class Contrato {
+@EqualsAndHashCode
+public class ContratoForm {
 
-    @Id
-    private Long contratoId;
     private String situacaoContrato;
     private String tipoContrato;
     private String contratante;
@@ -26,7 +22,7 @@ public class Contrato {
     private String dataInicio;
     private String dataTermino;
     private Curso curso;
-    private Aluno aluno;
+    private AlunoDto aluno;
     private Matricula matricula;
 
 }
