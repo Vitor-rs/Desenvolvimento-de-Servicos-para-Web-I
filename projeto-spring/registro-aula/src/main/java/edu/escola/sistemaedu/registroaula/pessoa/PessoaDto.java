@@ -1,34 +1,26 @@
 package edu.escola.sistemaedu.registroaula.pessoa;
 
-import edu.escola.sistemaedu.arch.dto.AdapterBaseObjectDto;
 import edu.escola.sistemaedu.registroaula.dadoacademico.DadoAcademicoDto;
 import edu.escola.sistemaedu.registroaula.dadoprofissional.DadoProfissionalDto;
 import edu.escola.sistemaedu.registroaula.enderecologradouro.EnderecoLogradouroDto;
-
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
-import lombok.experimental.SuperBuilder;
+import lombok.*;
 
 import java.io.Serializable;
-import java.time.LocalDateTime;
 
 /**
  * DTO for {@link Pessoa}
  */
-
 @NoArgsConstructor
-@EqualsAndHashCode(callSuper = true)
-@SuperBuilder
-public class PessoaDto extends AdapterBaseObjectDto implements Serializable {
+@EqualsAndHashCode
+@Builder
+public class PessoaDto implements Serializable {
 
-    // private Long id; Já está no AdapterBaseObjectDto
-    // private String nome; Já está no AdapterBaseObjectDto
-
-    private LocalDateTime createdAt;
+    private Long id;
+    private String nome;
     private String sobrenome;
     private String CPF;
     private String RG;
-    private char genero;
+    private String genero;
     private String dataNascimento;
     private Boolean estrangeiro;
     private String email;

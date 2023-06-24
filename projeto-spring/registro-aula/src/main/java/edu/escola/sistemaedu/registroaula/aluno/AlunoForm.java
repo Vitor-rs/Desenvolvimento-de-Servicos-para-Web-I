@@ -1,26 +1,21 @@
 package edu.escola.sistemaedu.registroaula.aluno;
 
-import edu.escola.sistemaedu.arch.dto.AdapterBaseObjectForm;
 import edu.escola.sistemaedu.registroaula.contrato.Contrato;
 import edu.escola.sistemaedu.registroaula.curso.Curso;
 import edu.escola.sistemaedu.registroaula.matricula.Matricula;
-
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
-import lombok.experimental.SuperBuilder;
 
-@SuperBuilder
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@EqualsAndHashCode(callSuper = true)
-public class AlunoForm extends AdapterBaseObjectForm {
+@EqualsAndHashCode
+public class AlunoForm {
 
-    // private Long id; Já está no AdapterBaseObjectForm
-    // private String nome; Já está no AdapterBaseObjectForm
-
+    private String nome;
     private Matricula matricula;
     private Contrato contrato;
     private Curso curso;
-
 }

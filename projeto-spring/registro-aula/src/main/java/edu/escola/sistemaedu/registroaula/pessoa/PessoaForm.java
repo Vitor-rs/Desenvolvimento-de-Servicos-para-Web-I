@@ -1,24 +1,24 @@
 package edu.escola.sistemaedu.registroaula.pessoa;
 
-import edu.escola.sistemaedu.arch.dto.AdapterBaseObjectForm;
+import edu.escola.sistemaedu.registroaula.dadoacademico.DadoAcademicoForm;
+import edu.escola.sistemaedu.registroaula.dadoprofissional.DadoProfissionalForm;
+import edu.escola.sistemaedu.registroaula.enderecologradouro.EnderecoLogradouroForm;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
-import lombok.experimental.SuperBuilder;
 
-@SuperBuilder
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@EqualsAndHashCode(callSuper = true)
-public class PessoaForm extends AdapterBaseObjectForm {
+@EqualsAndHashCode
+public class PessoaForm {
 
-    // private Long id; Já está no AdapterBaseObjectForm
-    // private String nome; Já está no AdapterBaseObjectForm
-
+    private String nome;
     private String sobrenome;
     private String CPF;
     private String RG;
-    private char genero;
+    private String genero;
     private String dataNascimento;
     private Boolean estrangeiro;
     private String email;
@@ -27,8 +27,7 @@ public class PessoaForm extends AdapterBaseObjectForm {
     private String cidadeNatal;
     private String estadoNatal;
 
-    // private DadoAcademicoDto dadoAcademico; Já está no AdapterBaseObjectForm
-    // private DadoProfissionalDto dadoProfissional; Já está no AdapterBaseObjectForm
-    // private EnderecoLogradouroDto enderecoLogradouro; Já está no AdapterBaseObjectForm
-
+    private DadoAcademicoForm dadoAcademico;
+    private DadoProfissionalForm dadoProfissional;
+    private EnderecoLogradouroForm enderecoLogradouro;
 }

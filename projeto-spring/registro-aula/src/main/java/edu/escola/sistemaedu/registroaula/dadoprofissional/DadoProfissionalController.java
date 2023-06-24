@@ -19,7 +19,7 @@ public class DadoProfissionalController extends AbstractBasicController<DadoProf
     @Override
     public URI createUri(DadoProfissional entity, UriComponentsBuilder uriBuilder) {
         return uriBuilder.path("/dadoprofissional/{id}")
-                .buildAndExpand(entity.getId())
+                .buildAndExpand(entity.getDadoProfissionalId())
                 .toUri();
     }
 

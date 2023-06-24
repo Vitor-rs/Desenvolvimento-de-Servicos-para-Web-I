@@ -2,23 +2,22 @@ package edu.escola.sistemaedu.registroaula.dadoprofissional;
 
 import edu.escola.sistemaedu.arch.BaseObject;
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import jakarta.persistence.SequenceGenerator;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import lombok.experimental.SuperBuilder;
 
 @Data
 @EqualsAndHashCode
 @AllArgsConstructor
 @NoArgsConstructor
-@SuperBuilder
+@Builder
 @Entity
 @SequenceGenerator(sequenceName = "dadoProfissionalSequence", name = "dado_profissional_seq", allocationSize = 1)
-public class DadoProfissional extends BaseObject {
+public class DadoProfissional {
 
-    // private Long dadoProfissionalId; Atributo não necessário, pois o id já está sendo gerado automaticamente pelo sequence generator
+    @Id
+    private Long dadoProfissionalId;
 
     private String profissaoFuncaoCargo;
 

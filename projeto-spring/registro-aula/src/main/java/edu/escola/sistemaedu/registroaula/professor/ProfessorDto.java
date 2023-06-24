@@ -16,6 +16,8 @@ import java.io.Serializable;
 @Builder
 public class ProfessorDto implements Serializable {
 
+    private Long id;
+    private String nome;
     private String especialidade;
 
 }

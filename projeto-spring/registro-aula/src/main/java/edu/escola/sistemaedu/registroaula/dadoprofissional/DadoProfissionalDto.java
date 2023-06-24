@@ -16,8 +16,6 @@ import java.io.Serializable;
 @SuperBuilder
 public class DadoProfissionalDto extends AdapterBaseObjectDto implements Serializable {
 
-    // private final Long id; Já está no AdapterBaseObjectDto
-
     private String profissaoFuncaoCargo;
     private String orgaoInstituicaoEmpresa;
     private String outros;
