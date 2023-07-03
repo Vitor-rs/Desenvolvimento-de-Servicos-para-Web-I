@@ -32,16 +32,12 @@ public interface IService<T, K, F, R> {
      * Este m�todo tem a finalidade de determinar qual ser� o
      * objeto que representa a classe de persistência de dados
      * no banco de dados conforme o padr�o Repository.
-     *
-     * @param repository
      */
     void setRepository(R repository);
 
     /**
      * Atribui��o do Objeto de Mapeamento. Atribui��o do objeto
      * respons�vel por mapear um DTO to Entity e vice-versa
-     *
-     * @param mapper
      */
     void setMapper(ISimpleMapper mapper);
 

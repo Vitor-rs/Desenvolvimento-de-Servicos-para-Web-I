@@ -1,26 +1,24 @@
 package edu.escola.sistemaedu.registroaula.enderecologradouro;
 
-import edu.escola.sistemaedu.arch.BaseObject;
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import jakarta.persistence.SequenceGenerator;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
-import lombok.experimental.SuperBuilder;
+import jakarta.validation.constraints.NotNull;
+import lombok.*;
 
 @Data
-@EqualsAndHashCode(callSuper = true)
 @AllArgsConstructor
 @NoArgsConstructor
-@SuperBuilder
+@Builder
 @SequenceGenerator(name = "enderecoLogradouroSequence", sequenceName = "endereco_logradouro_seq", allocationSize = 1)
 @Entity
-public class EnderecoLogradouro extends BaseObject {
+public class EnderecoLogradouro {
 
-    // private Long enderecoId;
-    // private String nome;
+    @Id
+    private Long enderecoLogradouroId;
 
+    @NotNull
+    private String nome;
 
     private String CEP;
 
@@ -35,5 +33,6 @@ public class EnderecoLogradouro extends BaseObject {
     private String cidadeAtual;
 
     private String estadoAtual;
+
 
 }

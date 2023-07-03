@@ -1,5 +1,6 @@
 package edu.escola.sistemaedu.registroaula.dadoacademico;
 
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
@@ -13,8 +14,11 @@ import java.io.Serializable;
 @Builder
 public class DadoAcademicoDto implements Serializable {
 
-    private String serieEscolar;
-    private String escolaridadeAtual;
-    private String orgaoInstituicaoEmpresa;
+    private Long id;
 
+    private String serieEscolar;
+
+    private String escolaridadeAtual;
+
+    private String orgaoInstituicaoEmpresa;
 }

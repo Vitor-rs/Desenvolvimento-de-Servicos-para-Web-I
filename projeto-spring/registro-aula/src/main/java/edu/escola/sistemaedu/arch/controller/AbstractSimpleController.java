@@ -58,7 +58,7 @@ public abstract class AbstractSimpleController<
         this.validate();
 
         var page = service.listar(paginacao);
-        return ResponseEntity.ok(mapper.toDtoPage(page));
+        return (ResponseEntity<Page<DTO>>) ResponseEntity.ok(mapper.toDtoPage(page));
     }
 
     @GetMapping("/list")

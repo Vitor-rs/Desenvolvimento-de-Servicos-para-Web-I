@@ -8,6 +8,7 @@ import org.mapstruct.factory.Mappers;
 
 @Mapper(config = BaseObjectMapper.class)
 public interface DadoAcademicoMapper extends ISimpleMapper<DadoAcademico, DadoAcademicoDto, DadoAcademicoForm> {
+
     public static final DadoAcademicoMapper INSTANCE = Mappers.getMapper(DadoAcademicoMapper.class);
 
     @InheritConfiguration(name = "toEntity")

@@ -1,5 +1,6 @@
 package edu.escola.sistemaedu.registroaula.enderecologradouro;
 
+
 import edu.escola.sistemaedu.arch.controller.AbstractBasicController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.util.UriComponentsBuilder;
@@ -17,8 +18,8 @@ public class EnderecoLogradouroController extends AbstractBasicController<Endere
 
     @Override
     public URI createUri(EnderecoLogradouro entity, UriComponentsBuilder uriBuilder) {
-        return uriBuilder.path("/enderecologradouro/{id}")
-                .buildAndExpand(entity.getId())
-                .toUri();
+        return uriBuilder.path("/enderecologradouro/{id}").buildAndExpand(entity.getEnderecoLogradouroId()).toUri();
     }
+
+
 }

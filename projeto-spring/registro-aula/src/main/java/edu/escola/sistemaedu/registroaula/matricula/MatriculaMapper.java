@@ -8,6 +8,7 @@ import org.mapstruct.factory.Mappers;
 
 @Mapper(config = BaseObjectMapper.class)
 public interface MatriculaMapper extends ISimpleMapper<Matricula, MatriculaDto, MatriculaForm> {
+
     public static final MatriculaMapper INSTANCE = Mappers.getMapper(MatriculaMapper.class);
 
     @InheritConfiguration(name = "toEntity")

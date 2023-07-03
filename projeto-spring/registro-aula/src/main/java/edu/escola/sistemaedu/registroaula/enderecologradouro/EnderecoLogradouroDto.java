@@ -1,23 +1,20 @@
 package edu.escola.sistemaedu.registroaula.enderecologradouro;
 
-import edu.escola.sistemaedu.arch.dto.AdapterBaseObjectDto;
+
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
+
 import lombok.experimental.SuperBuilder;
 
 import java.io.Serializable;
 
-/**
- * DTO for {@link EnderecoLogradouro}
- */
 @AllArgsConstructor
-@EqualsAndHashCode(callSuper = true)
+@EqualsAndHashCode
 @SuperBuilder
-public class EnderecoLogradouroDto extends AdapterBaseObjectDto implements Serializable {
+public class EnderecoLogradouroDto  implements Serializable {
 
-    // private final Long id; Já está no AdapterBaseObjectDto
-    // private final String nome; Já está no AdapterBaseObjectDto
-
+    private Long id;
+    private String nome;
     private String CEP;
     private String tipo;
     private int numero;

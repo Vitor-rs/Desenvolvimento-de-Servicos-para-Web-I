@@ -20,4 +20,5 @@ public class Curso extends BaseObject {
     private Integer duracaoCurso;
     private Integer numHorasAulaCurso;
 
+
 }

@@ -21,18 +21,19 @@ public interface ISimpleMapper<T, DTO, FORM> {
 
     public T formToEntity(FORM dto);
 
-    public T dtoToEntity(DTO dto);
+    public DTO entityToDto(T entity);
 
-    public DTO toDto(T entity);
+    public List<DTO> entityToDto(List<T> entity);
+
+    public Page<DTO> entityToDto(Page<T> entity);
 
     public T update(FORM dto, @MappingTarget T entity);
 
-    public List<T> toEntityList(List<DTO> items);
+    public FORM dtoToForm(DTO dto);
 
-    public List<DTO> toDtoList(List<T> items);
+    public List<FORM> dtoToForm(List<DTO> dto);
 
-    public default Page<DTO> toDtoPage(Page<T> items) {
-        return items.map(entity -> toDto(entity));
-    }
+    public Page<FORM> dtoToForm(Page<DTO> dto);
 
+    FORM toDtoPage(Page<T> page);
 }

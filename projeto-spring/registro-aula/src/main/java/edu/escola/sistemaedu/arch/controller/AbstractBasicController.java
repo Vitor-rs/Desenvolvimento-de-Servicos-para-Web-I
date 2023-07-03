@@ -42,7 +42,7 @@ public abstract class AbstractBasicController<
         super.validate();
 
         Page<T> page = service.listar(nome, paginacao);
-        return ResponseEntity.ok(mapper.toDtoPage(page));
+        return (ResponseEntity<Page<DTO>>) ResponseEntity.ok(mapper.toDtoPage(page));
     }
 
     @GetMapping("/page-not-used")

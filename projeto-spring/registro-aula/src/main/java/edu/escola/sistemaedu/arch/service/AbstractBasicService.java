@@ -28,7 +28,7 @@ public abstract class AbstractBasicService<
 
     @Override
     public Page<T> listar(String nome, Pageable paginacao) {
-        List<Specification<T>> l = new ArrayList();
+        List<Specification<T>> l = new ArrayList<>();
 
         if (StringUtils.hasText(nome)) {
             Specification<T> spec = (root, query, criteriaBuilder)

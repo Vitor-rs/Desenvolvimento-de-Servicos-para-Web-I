@@ -5,11 +5,9 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class EnderecoLogradouroService extends AbstractBasicService<EnderecoLogradouro, Long, EnderecoLogradouroForm, EnderecoLogradouroRepository> {
-
     @Override
     public void setRepository(EnderecoLogradouroRepository repository) {
         super.repository = repository;
         setMapper(EnderecoLogradouroMapper.INSTANCE);
     }
-
 }
